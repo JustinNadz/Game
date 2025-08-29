@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0h4wgkkb74g5"]
+
+[ext_resource type="Script" path="res://Spikes/instakill_spike.gd" id="1_cjxbi"]
+[ext_resource type="Texture2D" uid="uid://cq2uvq82ldhbg" path="res://assets/sprites/big_spike.png" id="2_iobvg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8yn84"]
+radius = 5.0
+height = 14.0
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_cjxbi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_8yn84")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 0.999999)
+scale = Vector2(1, 1.375)
+texture = ExtResource("2_iobvg")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

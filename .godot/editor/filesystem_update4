@@ -1,0 +1,12 @@
+res://levels/test_level.tscn
+res://Spikes/moving_spike_w_animation.gd
+res://Spikes/water.gd
+res://levels/test_level_2.tscn
+res://levels/test_level_3.tscn
+res://levels/test_stage_2.tscn
+res://levels/test_stage_2_2.tscn
+res://levels/test_stage_2_3.tscn
+res://levels/Stage3_Level1.tscn
+res://levels/Stage3_Level2.tscn
+res://levels/Stage3_level3.tscn
+res://camera_2d.tscn
